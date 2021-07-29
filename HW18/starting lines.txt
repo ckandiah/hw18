@@ -1,0 +1,12 @@
+
+Node1:
+Password:denesh12
+./geth --datadir node1 --unlock 0x22e55178FFF7faDA10AC7c324191BA3dabEc3329 --rpc --allow-insecure-unlock --ipcdisable
+
+Node2:
+Password:denesh12
+./geth --unlock 0x211a55aAd5e459E5Fb65715020593C77A6D199d4 --datadir node2 --port 30304 --bootnodes "enode://817f66c033c854b1b6aa5aa23d307974f0b2d90890e02163ea6cb86351e4c32b2b7db210e8a2a22dd27f1a246b61121755a1b5680476a80886e5e968abf5ea0f@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock -rpcport 8546
+
+Node3:
+Password:denesh12
+./geth --unlock 0x7620bD8473360783fAc0363601eE72298Fab082a --datadir node3 --port 30305 --bootnodes "enode://817f66c033c854b1b6aa5aa23d307974f0b2d90890e02163ea6cb86351e4c32b2b7db210e8a2a22dd27f1a246b61121755a1b5680476a80886e5e968abf5ea0f@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock -rpcport 8547 --nodiscover
